@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8f9ff, #f4f4f4);
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    color:rgb(127, 4, 69);
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+hr {
+    margin: 20px 0;
+    border:none;
+    height: 1px;
+    background: #ddd;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #f3f3ff;
+    padding: 15px;
+    font-weight: 600;
+}
+td {
+    padding: 20px;
+}
+th, td {
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+tr:hover {
+    background-color: #fafaff;
+    transition: 0.2s ease;
+}
+
+img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #faf8ff;
+}
+
+footer p {
+    color: #999;
+    font-size: 13px;
+}
+/* to make it responsive*/
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 120px;
+    }
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.work-btn {
+    background: linear-gradient(45deg, hotpink, violet);
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.work-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, deeppink, purple);
+}
+
+.work-btn:active {
+    transform: scale(0.95);
+}
+.interaction-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.interaction-section input {
+    padding: 10px;
+    width: 220px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.interaction-section button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, hotpink, violet);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.interaction-section button:hover {
+    transform: scale(1.05);
+}
+
+#welcomeMessage, #charmMessage {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #555;
+}

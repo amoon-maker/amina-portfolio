@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Favicon -->
+    <meta charset="UTF-8">
+        <title> Amina's Portfolio</title>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="style.css">
+          <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />      
+    </head>
+
+    <body>
+        <div class="container">
+        <!-- Website Title -->
+        <h1><sup>Welcome</sup> <sub>To</sub> My <sub>Portfolio</sub> <sup>Webpage</sup></h1>
+        <p>This is my  <mark>portfolio.</mark> I'll show you stuff I'm <del>good</del> with.</p>
+
+        <hr>
+
+        <!-- Table Section -->
+         <table>
+                <tr>
+                    <th style="width: 20%;"> Field</th>
+                    <th style="width: 30%;">Description</th>
+                    <th style="width: 50%;"> Image</th>  
+                </tr>
+
+                <tr>
+                    <td>Software Dev</td>
+                    <td>Course Project</td>
+                    <td> <img src="images/Code.jpg" alt="Code Image"></td>
+                </tr>
+
+                <tr>
+                    <td>Graphic</td>
+                    <td>Social Media Content</td>
+                    <td><img src="images/Graphic.jpg" alt="Graphic Image"></td>
+                </tr>
+
+                <tr>
+                    <td>Fashion</td>
+                    <td>Tech pack - SS Men's Collection 2024</td>
+                    <td><img src="images/Fashion.jpg" alt="Fashion Image"></td>
+                </tr>
+         </table>
+
+         <div class="button-wrapper">
+            <button class="work-btn" onclick="location.href='https://sites.google.com/view/aminaalhalabieh/home?authuser=0';">
+             View My Work Samples
+            </button>
+         </div>
+
+         <hr>
+
+
+<section class="interaction-section">
+    <h2>Say Hi To Me &#9731;</h2>
+
+    <!-- Name Form -->
+    <form onsubmit="welcomeUser(event)">
+        <input type="text" id="username" placeholder="Enter your name" required>
+        <button type="submit">submit</button>
+    </form>
+
+    <p id="welcomeMessage"></p>
+
+    <br>
+
+    <!-- Charm Button -->
+        <p><i>Try my new charm code here!</i></p>
+    <button onclick="showCharm()">&#9752; Charm Me &#9752;</button>
+
+    <p id="charmMessage"></p>
+</section>
+
+         <!-- Footer -->
+         <footer>
+            <p>Copyright © 2026 Amina Ayad</p>
+         </footer>
+
+        </div>  
+        <script>
+function welcomeUser(event) {
+    event.preventDefault(); // prevents page refresh
+
+    let name = document.getElementById("username").value;
+
+    document.getElementById("welcomeMessage").innerHTML =
+        "Welcome, " + name + "! You officially unlocked good vibes.";
+}
+
+function showCharm() {
+
+    let charms = [
+        "Something good is coming your way.",
+        "Your effort will pay off.",
+        "Your ideas matter more than you realize.",
+        "Today is secretly your lucky day."
+    ];
+
+    let randomCharm = charms[Math.floor(Math.random() * charms.length)];
+
+    document.getElementById("charmMessage").innerHTML = randomCharm;
+}
+</script>
+    </body>
+</html>
